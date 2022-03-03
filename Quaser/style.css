@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+.header{
+  
+    background-image: linear-gradient(rgba(3, 9, 30, 0.7), rgba(0, 0, 0, 0.7)),url(Images/Bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    margin-right: auto;
+    padding: 0.6cm 2cm;
+}
+nav{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    padding:20px 2%;
+    
+}
+
+
+nav ul li a {
+    font-family: 'Acme', sans-serif;
+    color: beige;
+    font-size: x-large;
+    text-decoration: none;
+    
+
+
+}
+
+nav ul li a:hover {
+    transition: 0.5s;
+    color: greenyellow;
+
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0.4cm 0.9cm;
+
+}
+
+nav ul li::after {
+
+    width: 0%;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    background: gold;
+    transition: 0.4s;
+
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+nav ul{
+    padding-top: 0.7cm;
+}
+
+.content{
+    font-family: 'Acme', sans-serif;
+    color: aqua;
+    
+    margin-top: 9%;
+    
+}
+.content h1{
+    font-weight: normal;
+    font-size: 100px;
+    
+    line-height:140px;
+    text-align: center;
+    
+}
+
+.content h1 span:hover{
+    transition: 0.6s;
+    color: thistle;
+}
+.content p{
+    text-align: center;
+    font-size: 50px;
+    max-width: 5000px;
+    line-height: 80px;
+}
+.start-button a{
+    text-decoration: none;
+    color: aqua;
+}
+.start-button {
+    display: inline-block;
+    margin-top: 2cm;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px 5%;
+    margin-left: 43%;
+    cursor: pointer;
+    align-items:center;
+
+    
+    
+   
+}
+
+.start-button a{
+
+    font-size: 30px;
+    color: white;
+    
+}
+
+
+.moving{
+    animation: left 2s linear forwards;
+
+}
+@keyframes left{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
